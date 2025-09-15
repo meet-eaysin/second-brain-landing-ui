@@ -1,21 +1,17 @@
-import Connections from "@/components/sections/connections";
-import CTA from "../components/sections/cta/default";
-import FAQ from "../components/sections/faq/default";
-import Footer from "../components/sections/footer/default";
-import Hero from "../components/sections/hero/default";
-import Items from "../components/sections/items/default";
-import Logos from "../components/sections/logos/default";
-import Navbar from "../components/sections/navbar/default";
-import Pricing from "../components/sections/pricing/default";
-import Stats from "../components/sections/stats/default";
+import CTA from "../components/sections/cta";
+import FAQ from "../components/sections/faq";
+import Footer from "../components/sections/footer";
+import Hero from "../components/sections/hero";
+import Items from "../components/sections/items";
+import Navbar from "../components/sections/navbar";
+import Pricing from "../components/sections/pricing";
+import Stats from "../components/sections/stats";
 
 export default function Home() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full overflow-hidden">
       <Navbar />
       <Hero />
-      {/* <Connections /> */}
-      {/* <Logos /> */}
       <Items />
       <Stats />
       <Pricing />

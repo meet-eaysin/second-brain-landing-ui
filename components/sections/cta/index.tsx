@@ -25,7 +25,7 @@ export default function CTA({
   title = "Ready to See the System in Action?",
   buttons = [
     {
-      href: siteConfig.links.demo, // You'd add this to siteConfig
+      href: siteConfig.links.demo,
       text: "View Live Demo",
       variant: "default",
     },

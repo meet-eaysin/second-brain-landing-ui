@@ -10,7 +10,9 @@ export const siteConfig = {
     twitter: "https://twitter.com/secondbrain",
     github: "https://github.com/secondbrain/secondbrain",
     email: "mailto:hello@secondbrain.app",
+    linkedin: "",
     docs: "",
+    demo: "",
   },
   pricing: {
     pro: "https://secondbrain.app/pricing#pro",
