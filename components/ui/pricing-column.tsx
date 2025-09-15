@@ -21,7 +21,7 @@ const pricingColumnVariants = cva(
     defaultVariants: {
       variant: "default",
     },
-  },
+  }
 );
 
 export interface PricingColumnProps
@@ -36,8 +36,10 @@ export interface PricingColumnProps
     variant: "glow" | "default";
     label: string;
     href: string;
+    disabled?: boolean;
   };
   features: string[];
+  badge?: ReactNode;
 }
 
 export function PricingColumn({
@@ -49,6 +51,7 @@ export function PricingColumn({
   cta,
   features,
   variant,
+  badge,
   className,
   ...props
 }: PricingColumnProps) {
@@ -60,44 +63,48 @@ export function PricingColumn({
       <hr
         className={cn(
           "via-foreground/60 absolute top-0 left-[10%] h-[1px] w-[80%] border-0 bg-linear-to-r from-transparent to-transparent",
-          variant === "glow-brand" && "via-brand",
+          variant === "glow-brand" && "via-brand"
         )}
       />
       <div className="flex flex-col gap-7">
         <div className="flex flex-col gap-2">
-          <h2 className="flex items-center gap-2 font-bold">
-            {icon && (
-              <div className="text-muted-foreground flex items-center gap-2">
-                {icon}
-              </div>
-            )}
-            {name}
-          </h2>
+          <div className="flex items-center gap-2">
+            <h2 className="font-bold">{name}</h2>
+            {badge && badge}
+          </div>
           <p className="text-muted-foreground max-w-[220px] text-sm">
             {description}
           </p>
         </div>
         <div className="flex items-center gap-3 lg:flex-col lg:items-start xl:flex-row xl:items-center">
           <div className="flex items-baseline gap-1">
-            <span className="text-muted-foreground text-2xl font-bold">$</span>
-            <span className="text-6xl font-bold">{price}</span>
-          </div>
-          <div className="flex min-h-[40px] flex-col">
             {price > 0 && (
-              <>
-                <span className="text-sm">one-time payment</span>
-                <span className="text-muted-foreground text-sm">
-                  plus local taxes
-                </span>
-              </>
+              <span className="text-muted-foreground text-2xl font-bold">
+                $
+              </span>
+            )}
+            <span className="text-6xl font-bold">{price}</span>
+            {price > 0 && (
+              <span className="text-muted-foreground self-end text-sm font-medium">
+                /month
+              </span>
             )}
           </div>
+          <div className="flex min-h-[40px] flex-col">
+            <span className="text-muted-foreground text-sm">{priceNote}</span>
+          </div>
         </div>
-        <Button variant={cta.variant} size="lg" asChild>
+        <Button
+          variant={cta.variant}
+          size="lg"
+          asChild
+          disabled={cta.disabled}
+          className={cta.disabled ? "opacity-70 cursor-not-allowed" : ""}
+        >
           <Link href={cta.href}>{cta.label}</Link>
         </Button>
         <p className="text-muted-foreground min-h-[40px] max-w-[220px] text-sm">
-          {priceNote}
+          {price === 0 ? "No credit card required" : "Cancel anytime"}
         </p>
         <hr className="border-input" />
       </div>

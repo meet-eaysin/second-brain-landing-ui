@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Brain } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -36,41 +37,32 @@ export default function FooterSection({
   name = "Second Brain",
   columns = [
     {
-      title: "Product",
+      title: "Project",
       links: [
         { text: "Features", href: "/#features" },
-        { text: "Pricing", href: "/pricing" },
-        { text: "Templates & PARA", href: "/#templates" },
-        { text: "Dashboards", href: "/#dashboards" },
-        { text: "FAQ", href: "/#faq" },
+        { text: "Modules", href: "/#modules" },
+        { text: "Demo", href: "/demo" },
+        { text: "Tech Stack", href: "/#tech" },
       ],
     },
     {
-      title: "Company",
+      title: "Develop",
       links: [
-        { text: "About", href: "/about" },
-        { text: "Blog", href: "/blog" },
-        { text: "Careers", href: "/careers" },
-      ],
-    },
-    {
-      title: "Resources",
-      links: [
+        { text: "GitHub", href: siteConfig.links.github },
         { text: "Documentation", href: "/docs" },
-        { text: "Support", href: "/support" },
-        { text: "Community", href: "/community" },
+        { text: "API Reference", href: "/docs/api" },
       ],
     },
     {
-      title: "Contact",
+      title: "Connect",
       links: [
+        { text: "LinkedIn", href: siteConfig.links.linkedin },
+        { text: "Twitter / X", href: siteConfig.links.twitter },
         { text: "Email", href: `mailto:${siteConfig.links.email}` },
-        { text: "Twitter", href: siteConfig.links.twitter },
-        { text: "Github", href: siteConfig.links.github },
       ],
     },
   ],
-  copyright = `© ${new Date().getFullYear()} Second Brain. All rights reserved.`,
+  copyright = `© ${new Date().getFullYear()} Second Brain. A showcase project by Eaysin Arafat.`,
   policies = [
     { text: "Privacy Policy", href: "/privacy" },
     { text: "Terms of Service", href: "/terms" },
@@ -85,13 +77,12 @@ export default function FooterSection({
           <FooterContent>
             <FooterColumn className="col-span-2 sm:col-span-3 md:col-span-1">
               <div className="flex items-center gap-2">
-                {logo && logo}
+                {logo || <Brain className="h-6 w-6" />}
                 <h3 className="text-xl font-bold">{name}</h3>
               </div>
               <p className="text-muted-foreground mt-2 max-w-[300px] text-sm">
-                A modular productivity and knowledge management platform to
-                organize tasks, projects, goals, habits, notes, and resources in
-                one connected workspace.
+                A modular productivity & knowledge management platform. Built
+                with Next.js, TypeScript, Tailwind, and Prisma.
               </p>
             </FooterColumn>
             {columns.map((column, index) => (
@@ -101,7 +92,7 @@ export default function FooterSection({
                   <a
                     key={linkIndex}
                     href={link.href}
-                    className="text-muted-foreground text-sm"
+                    className="text-muted-foreground hover:text-foreground text-sm transition-colors"
                   >
                     {link.text}
                   </a>
@@ -110,10 +101,14 @@ export default function FooterSection({
             ))}
           </FooterContent>
           <FooterBottom>
-            <div>{copyright}</div>
+            <div className="text-muted-foreground text-sm">{copyright}</div>
             <div className="flex items-center gap-4">
               {policies.map((policy, index) => (
-                <a key={index} href={policy.href}>
+                <a
+                  key={index}
+                  href={policy.href}
+                  className="text-muted-foreground hover:text-foreground text-sm transition-colors"
+                >
                   {policy.text}
                 </a>
               ))}

@@ -1,4 +1,4 @@
-import ConnectionsSection from "@/components/sections/connections";
+import Connections from "@/components/sections/connections";
 import CTA from "../components/sections/cta/default";
 import FAQ from "../components/sections/faq/default";
 import Footer from "../components/sections/footer/default";
@@ -14,8 +14,8 @@ export default function Home() {
     <main className="bg-background text-foreground min-h-screen w-full overflow-hidden">
       <Navbar />
       <Hero />
-      <ConnectionsSection />
-      <Logos />
+      {/* <Connections /> */}
+      {/* <Logos /> */}
       <Items />
       <Stats />
       <Pricing />

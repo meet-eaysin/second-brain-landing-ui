@@ -94,21 +94,21 @@ export default function Logos({
       <div className="max-w-container mx-auto flex flex-col items-center gap-8 text-center">
         <div className="flex flex-col items-center gap-4">
           {badge !== false && badge}
-          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          {/* <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
             {title}
           </h2>
           <p className="text-muted-foreground max-w-[720px] text-sm sm:text-base">
             A modular workspace with pre-built systems for tasks, projects,
             goals, habits, notes, finance, and more — fully customizable to fit
             your workflow.
-          </p>
+          </p> */}
         </div>
 
-        {logos !== false && logos.length > 0 && (
+        {/* {logos !== false && logos.length > 0 && (
           <div className="flex flex-wrap items-center justify-center gap-10">
             {logos}
           </div>
-        )}
+        )} */}
       </div>
     </Section>
   );

@@ -22,16 +22,16 @@ interface CTAProps {
 }
 
 export default function CTA({
-  title = "Start organizing your life with Second Brain",
+  title = "Ready to See the System in Action?",
   buttons = [
     {
-      href: "/signup",
-      text: "Get Started",
+      href: siteConfig.links.demo, // You'd add this to siteConfig
+      text: "View Live Demo",
       variant: "default",
     },
     {
       href: "/pricing",
-      text: "View Plans",
+      text: "Explore the Code",
       variant: "outline",
     },
   ],
@@ -40,7 +40,7 @@ export default function CTA({
   return (
     <Section className={cn("group relative overflow-hidden", className)}>
       <div className="max-w-container relative z-10 mx-auto flex flex-col items-center gap-6 text-center sm:gap-8">
-        <h2 className="max-w-[640px] text-3xl leading-tight font-semibold sm:text-5xl sm:leading-tight">
+        <h2 className="max-w-[640px] text-3xl font-semibold leading-tight sm:text-5xl sm:leading-tight">
           {title}
         </h2>
         {buttons !== false && buttons.length > 0 && (
@@ -62,7 +62,7 @@ export default function CTA({
           </div>
         )}
       </div>
-      <div className="absolute top-0 left-0 h-full w-full translate-y-[1rem] opacity-80 transition-all duration-500 ease-in-out group-hover:translate-y-[-2rem] group-hover:opacity-100">
+      <div className="absolute left-0 top-0 h-full w-full translate-y-[1rem] opacity-80 transition-all duration-500 ease-in-out group-hover:-translate-y-2 group-hover:opacity-100">
         <Glow variant="bottom" />
       </div>
     </Section>

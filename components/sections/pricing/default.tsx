@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { Section } from "../../ui/section";
 import { PricingColumn, PricingColumnProps } from "../../ui/pricing-column";
+import { Badge } from "../../ui/badge";
 
 interface PricingProps {
   title?: string | false;
@@ -11,65 +12,83 @@ interface PricingProps {
 }
 
 export default function Pricing({
-  title = "Choose the plan that fits your workflow",
-  description = "Access all Second Brain modules and features. Flexible, transparent pricing for individuals and teams.",
+  title = "Future Plans for Second Brain",
+  description = "Experience the full power of modular productivity. Comprehensive plans designed for every workflow.",
   plans = [
     {
       name: "Free",
-      description:
-        "For individuals starting to organize their personal knowledge",
+      description: "For individuals starting their productivity journey",
       price: 0,
-      priceNote: "Forever free. Core modules included.",
+      priceNote: "Always free. Core experience included.",
       cta: {
         variant: "glow",
-        label: "Get started for free",
+        label: "Get Started",
         href: "/signup",
       },
       features: [
-        "Access to Task, Notes, Projects, and Habits modules",
-        "Create 1 Workspace",
-        "Basic custom properties for databases",
-        "Board, Table, and Calendar views",
+        "Tasks, Notes, Projects & Habits modules",
+        "1 Personal Workspace",
+        "Basic custom properties",
+        "Table, Board & Calendar views",
+        "Local data storage",
       ],
       variant: "default",
     },
     {
       name: "Pro",
-      description: "For power users who need full flexibility and analytics",
-      price: 49,
-      priceNote:
-        "Monthly subscription. Includes all modules and advanced features.",
+      description: "For power users needing advanced capabilities",
+      price: 12,
+      priceNote: "Monthly per user. All premium features.",
       cta: {
         variant: "default",
-        label: "Upgrade to Pro",
-        href: "/signup/pro",
+        label: "Coming Soon",
+        href: "#",
+        disabled: true,
       },
       features: [
-        "Unlimited Workspaces",
-        "All modules: Task, Notes, Projects, Habits, Goals, Journal, Finance, People, Resources, Content, etc.",
-        "Custom properties and multiple database views",
-        "Dashboard, Analytics, and Notifications",
+        "Everything in Free",
+        "All modules: Goals, Journal, Finance, People, Resources",
+        "Advanced custom properties & formulas",
+        "Timeline, Gallery & List views",
+        "AI-assisted content generation",
+        "Advanced dashboards & analytics",
+        "Cloud sync & backup",
+        "Priority email support",
       ],
       variant: "glow-brand",
+      badge: (
+        <Badge variant="outline" className="ml-2 border-brand/30 text-brand">
+          Coming Soon
+        </Badge>
+      ),
     },
     {
       name: "Team",
-      description: "For teams collaborating across projects and tasks",
-      price: 199,
-      priceNote: "Monthly subscription. Full team access.",
+      description: "For teams collaborating in shared workspaces",
+      price: 8,
+      priceNote: "Monthly per user (min 5 seats). Team collaboration.",
       cta: {
         variant: "default",
-        label: "Upgrade for your team",
-        href: "/signup/team",
+        label: "Coming Soon",
+        href: "#",
+        disabled: true,
       },
       features: [
         "Everything in Pro",
-        "Team collaboration features",
-        "Shared Workspaces and Projects",
-        "Advanced user permissions and roles",
-        "Priority support",
+        "Shared team workspaces",
+        "Advanced user permissions & roles",
+        "Real-time collaboration",
+        "Team AI knowledge base",
+        "Advanced automation & workflows",
+        "Audit logs & activity history",
+        "Dedicated account manager",
       ],
       variant: "glow",
+      badge: (
+        <Badge variant="outline" className="ml-2 border-brand/30 text-brand">
+          Coming Later
+        </Badge>
+      ),
     },
   ],
   className = "",
@@ -105,6 +124,7 @@ export default function Pricing({
                 features={plan.features}
                 variant={plan.variant}
                 className={plan.className}
+                badge={plan.badge}
               />
             ))}
           </div>

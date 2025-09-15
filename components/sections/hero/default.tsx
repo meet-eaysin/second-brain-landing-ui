@@ -1,16 +1,17 @@
-import { ArrowRightIcon } from "lucide-react";
+"use client";
+
+import { ArrowRightIcon, Brain, Github } from "lucide-react";
 import { ReactNode } from "react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import Github from "../../logos/github";
 import { Badge } from "../../ui/badge";
 import { Button, type ButtonProps } from "../../ui/button";
 import Glow from "../../ui/glow";
 import { Mockup, MockupFrame } from "../../ui/mockup";
-import Screenshot from "../../ui/screenshot";
 import { Section } from "../../ui/section";
+import Screenshot from "../../ui/screenshot";
 
 interface HeroButtonProps {
   href: string;
@@ -30,8 +31,8 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Your Second Brain, all in one place",
-  description = "Second Brain unifies tasks, projects, notes, goals, and knowledge into a single modular workspace — designed to grow with you.",
+  title = "Organize Your Mind, Amplify Your Output",
+  description = "Second Brain is a modular, type-safe platform that unifies your tasks, projects, and knowledge. Structure your workflow your way, with deeply connected data and powerful visualizations.",
   mockup = (
     <Screenshot
       srcLight="/dashboard-light.png"
@@ -43,21 +44,20 @@ export default function Hero({
     />
   ),
   badge = (
-    <Badge variant="outline" className="animate-appear">
-      <span className="text-muted-foreground">
-        🚀 v1.0 — Modular Productivity System
-      </span>
-      <a href={siteConfig.getStartedUrl} className="flex items-center gap-1">
-        Get started
-        <ArrowRightIcon className="size-3" />
-      </a>
+    <Badge
+      variant="outline"
+      className="animate-pulse border-brand/30 bg-brand/10 text-brand"
+    >
+      <Brain className="mr-1 h-3 w-3" />
+      AI Insights — Coming Soon
     </Badge>
   ),
   buttons = [
     {
       href: siteConfig.getStartedUrl,
-      text: "Get Started",
+      text: "Explore the Demo",
       variant: "default",
+      iconRight: <ArrowRightIcon className="ml-2 h-4 w-4" />,
     },
     {
       href: siteConfig.links.github,
@@ -72,16 +72,16 @@ export default function Hero({
     <Section
       className={cn(
         "fade-bottom overflow-hidden pb-0 sm:pb-0 md:pb-0",
-        className,
+        className
       )}
     >
       <div className="max-w-container mx-auto flex flex-col gap-12 pt-16 sm:gap-24">
         <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
           {badge !== false && badge}
-          <h1 className="animate-appear from-foreground to-foreground dark:to-muted-foreground relative z-10 inline-block bg-linear-to-r bg-clip-text text-4xl leading-tight font-semibold text-transparent drop-shadow-2xl sm:text-6xl md:text-8xl">
+          <h1 className="animate-appear relative z-10 inline-block bg-gradient-to-r from-foreground to-foreground dark:to-muted-foreground bg-clip-text text-4xl font-semibold leading-tight text-transparent drop-shadow-2xl sm:text-6xl md:text-7xl">
             {title}
           </h1>
-          <p className="animate-appear text-md text-muted-foreground relative z-10 max-w-[740px] font-medium text-balance opacity-0 delay-100 sm:text-xl">
+          <p className="animate-appear text-muted-foreground relative z-10 max-w-[740px] text-balance text-lg font-medium opacity-0 delay-100 sm:text-xl">
             {description}
           </p>
 

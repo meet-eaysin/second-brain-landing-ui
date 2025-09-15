@@ -69,7 +69,7 @@ export default function Navbar({
     <header
       className={cn(
         "bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 backdrop-blur",
-        className,
+        className
       )}
     >
       <div className="mx-auto max-w-7xl px-4">
@@ -139,7 +139,7 @@ export default function Navbar({
               </Button>
             </div>
 
-            {actions.map((action, index) =>
+            {/* {actions.map((action, index) =>
               action.isButton ? (
                 <Button
                   key={index}
@@ -163,7 +163,7 @@ export default function Navbar({
                   {action.text}
                 </a>
               ),
-            )}
+            )} */}
 
             {/* Mobile Menu */}
             <Sheet>
@@ -212,7 +212,7 @@ export default function Navbar({
                         >
                           {action.text}
                         </a>
-                      ),
+                      )
                     )}
                   </div>
                 </nav>

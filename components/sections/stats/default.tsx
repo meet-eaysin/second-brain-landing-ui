@@ -15,24 +15,26 @@ interface StatsProps {
 export default function Stats({
   items = [
     {
-      label: "Tasks Managed",
-      value: 2500,
-      description: "Tasks organized across all user projects",
+      label: "Data Types",
+      value: 14,
+      suffix: "+",
+      description: "Rich property types including Relation & Formula",
     },
     {
-      label: "Projects Tracked",
-      value: 420,
-      description: "Active and completed projects",
+      label: "View Types",
+      value: 6,
+      description: "Table, Board, Calendar, Timeline, List, and Gallery",
     },
     {
-      label: "Notes Created",
-      value: 12000,
-      description: "Ideas and knowledge captured in notes",
+      label: "Core Modules",
+      value: 10,
+      description: "Pre-built for productivity & knowledge management",
     },
     {
-      label: "Users Onboarded",
-      value: 1500,
-      description: "Users building their second brain daily",
+      label: "Custom Database",
+      value: "--",
+      description:
+        "Create flexible databases with multiple property types, relations, rollups, and custom views",
     },
   ],
   className,
@@ -45,7 +47,7 @@ export default function Stats({
             {items.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-start gap-3 text-left"
+                className="flex flex-col items-center gap-3 text-center"
               >
                 {item.label && (
                   <div className="text-muted-foreground text-sm font-semibold">
@@ -53,7 +55,7 @@ export default function Stats({
                   </div>
                 )}
                 <div className="flex items-baseline gap-2">
-                  <div className="from-foreground to-foreground dark:to-brand bg-linear-to-r bg-clip-text text-4xl font-bold text-transparent drop-shadow-[2px_1px_24px_var(--brand-foreground)] transition-all duration-300 sm:text-5xl md:text-6xl">
+                  <div className="from-foreground to-brand bg-gradient-to-r bg-clip-text text-4xl font-bold text-transparent sm:text-5xl md:text-6xl">
                     {item.value}
                   </div>
                   {item.suffix && (
