@@ -46,7 +46,7 @@ It helps individuals and teams organize tasks, projects, goals, habits, and know
 
 ## Get Started
 
-👉 Visit [secondbrain.com]() (replace with your domain) to learn more and explore the platform.  
+👉 Visit []() (replace with your domain) to learn more and explore the platform.  
 
 ---
 
