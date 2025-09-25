@@ -31,8 +31,8 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Organize Your Mind, Amplify Your Output",
-  description = "Second Brain is a modular, type-safe platform that unifies your tasks, projects, and knowledge. Structure your workflow your way, with deeply connected data and powerful visualizations.",
+  title = "Your Digital Second Brain",
+  description = "A comprehensive productivity platform with modular workspaces, advanced databases, rich note-taking, and powerful project management. Connect your tasks, knowledge, and goals in one seamless system.",
   mockup = (
     <Screenshot
       srcLight="/dashboard-light.png"
@@ -49,21 +49,20 @@ export default function Hero({
       className="animate-pulse border-brand/30 bg-brand/10 text-brand"
     >
       <Brain className="mr-1 h-3 w-3" />
-      AI Insights — Coming Soon
+      15+ Modules • Type-Safe • Production Ready
     </Badge>
   ),
   buttons = [
     {
       href: siteConfig.getStartedUrl,
-      text: "Explore the Demo",
+      text: "Start Free Trial",
       variant: "default",
       iconRight: <ArrowRightIcon className="ml-2 h-4 w-4" />,
     },
     {
-      href: siteConfig.links.github,
-      text: "GitHub",
+      href: "/features",
+      text: "View Features",
       variant: "glow",
-      icon: <Github className="mr-2 size-4" />,
     },
   ],
   className,

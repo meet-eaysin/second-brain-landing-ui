@@ -37,28 +37,30 @@ export default function FooterSection({
   name = "Second Brain",
   columns = [
     {
-      title: "Project",
+      title: "Product",
       links: [
-        { text: "Features", href: "/#features" },
-        { text: "Modules", href: "/#modules" },
-        { text: "Demo", href: "/demo" },
-        { text: "Tech Stack", href: "/#tech" },
+        { text: "Features", href: "/features" },
+        { text: "Pricing", href: "/#pricing" },
+        { text: "About", href: "/about" },
+        { text: "Contact", href: "/contact" },
       ],
     },
     {
-      title: "Develop",
+      title: "Resources",
       links: [
         { text: "GitHub", href: siteConfig.links.github },
-        { text: "Documentation", href: "/docs" },
+        { text: "Documentation", href: siteConfig.docsUrl },
         { text: "API Reference", href: "/docs/api" },
+        { text: "Support", href: "/contact" },
       ],
     },
     {
-      title: "Connect",
+      title: "Company",
       links: [
-        { text: "LinkedIn", href: siteConfig.links.linkedin },
-        { text: "Twitter / X", href: siteConfig.links.twitter },
-        { text: "Email", href: `mailto:${siteConfig.links.email}` },
+        { text: "About Us", href: "/about" },
+        { text: "Blog", href: "/blog" },
+        { text: "Careers", href: "/careers" },
+        { text: "Contact", href: "/contact" },
       ],
     },
   ],

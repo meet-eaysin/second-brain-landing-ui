@@ -12,6 +12,13 @@ import {
   Database,
   Braces,
   Workflow,
+  Calendar,
+  Search,
+  Settings,
+  FolderOpen,
+  BarChart3,
+  Shield,
+  Zap,
 } from "lucide-react";
 
 import { Item, ItemDescription, ItemIcon, ItemTitle } from "../../ui/item";
@@ -30,43 +37,79 @@ interface ItemsProps {
 }
 
 export default function Items({
-  title = "Built on a Powerful, Modular Foundation",
+  title = "15+ Specialized Modules for Every Workflow",
   items = [
     {
-      title: "Modular Architecture",
+      title: "Task Management",
       description:
-        "Pre-built databases (Tasks, Notes, Projects) that are fully extensible. Create your own modules for any use case.",
-      icon: <Database className="size-5 stroke-1" />,
-    },
-    {
-      title: "Type-Safe Properties",
-      description:
-        "Define strict schemas with rich types: Relations, Formulas, Selects, Dates, and more. The core of your data integrity.",
-      icon: <Braces className="size-5 stroke-1" />,
-    },
-    {
-      title: "Relational Data",
-      description:
-        "Connect anything to everything. Link a Task to a Project, a Note to a Person, and see the entire context instantly.",
-      icon: <Workflow className="size-5 stroke-1" />,
-    },
-    {
-      title: "Tasks & Projects",
-      description:
-        "More than a todo list. Actionable items with custom statuses, priorities, and relations to goals and knowledge.",
+        "Advanced task tracking with priorities, due dates, dependencies, and custom workflows. Connect tasks to projects and goals.",
       icon: <CheckSquare className="size-5 stroke-1" />,
     },
     {
-      title: "Knowledge Base",
+      title: "Project Planning",
       description:
-        "Organize notes, resources, and journals. Connect them to your active projects for a seamless workflow.",
+        "Comprehensive project management with timelines, resource allocation, and progress tracking across teams.",
+      icon: <FolderOpen className="size-5 stroke-1" />,
+    },
+    {
+      title: "Rich Text Notes",
+      description:
+        "Notion-like editor for creating detailed notes, documentation, and knowledge base entries with rich formatting.",
       icon: <FileText className="size-5 stroke-1" />,
     },
     {
-      title: "Goals & Habits",
+      title: "Custom Databases",
       description:
-        "Track objectives and build routines. Measure progress with dashboards powered by your actual task and project data.",
-      icon: <Target className="size-5 stroke-1" />,
+        "Build flexible databases with type-safe properties: Text, Number, Date, Select, Relation, Formula, and Media types.",
+      icon: <Database className="size-5 stroke-1" />,
+    },
+    {
+      title: "Calendar Integration",
+      description:
+        "Schedule management with calendar views, reminders, and integration with external calendar systems.",
+      icon: <Calendar className="size-5 stroke-1" />,
+    },
+    {
+      title: "PARA Method",
+      description:
+        "Organize knowledge using the PARA system: Projects, Areas, Resources, Archive for systematic information management.",
+      icon: <Workflow className="size-5 stroke-1" />,
+    },
+    {
+      title: "People & Contacts",
+      description:
+        "Contact management with detailed profiles, relationship tracking, and team collaboration features.",
+      icon: <Users className="size-5 stroke-1" />,
+    },
+    {
+      title: "Financial Tracking",
+      description:
+        "Budget management, expense tracking, and financial goal setting with detailed reporting and analytics.",
+      icon: <DollarSign className="size-5 stroke-1" />,
+    },
+    {
+      title: "Advanced Search",
+      description:
+        "Powerful full-text search across all content with filters, advanced queries, and instant results.",
+      icon: <Search className="size-5 stroke-1" />,
+    },
+    {
+      title: "Dashboard Analytics",
+      description:
+        "Custom dashboards with charts, statistics, and widgets to visualize productivity and progress metrics.",
+      icon: <BarChart3 className="size-5 stroke-1" />,
+    },
+    {
+      title: "Workspace Management",
+      description:
+        "Multi-workspace support with permissions, roles, and collaborative features for teams and organizations.",
+      icon: <Shield className="size-5 stroke-1" />,
+    },
+    {
+      title: "Template System",
+      description:
+        "Reusable templates for common workflows, projects, and content types to accelerate productivity.",
+      icon: <Clipboard className="size-5 stroke-1" />,
     },
   ],
   className,

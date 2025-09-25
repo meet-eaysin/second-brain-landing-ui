@@ -24,78 +24,83 @@ export default function FAQ({
   title = "Frequently Asked Questions",
   items = [
     {
-      question: "What is Second Brain?",
+      question: "What makes Second Brain different from other productivity tools?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Second Brain is a modular productivity and knowledge management
-          platform that acts as an external extension of your mind. It helps you
-          organize tasks, projects, goals, habits, notes, and resources in one
-          connected workspace, with the flexibility to create custom modules and
-          track relationships between all your data.
+          Second Brain offers a truly modular architecture with 15+ specialized modules
+          that work together seamlessly. Unlike rigid tools, you can customize every aspect
+          of your workspace while maintaining powerful relationships between your data.
+          It's designed to adapt to your workflow, not force you to adapt to it.
         </p>
       ),
     },
     {
-      question: "How does the modular system work?",
+      question: "How many modules are available?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Every workspace is built from modules like Tasks, Projects, Goals,
-          Habits, Notes, Journal, and more. Each module is pre-configured for
-          its purpose but fully customizable, allowing you to add your own
-          properties, views, and templates, or even create entirely new modules.
+          Second Brain includes 15+ specialized modules including Tasks, Projects, Notes,
+          Databases, Calendar, People, Finance, Journal, Goals, Templates, Search, and more.
+          Each module is pre-configured for its purpose but fully customizable with your own
+          properties, views, and workflows.
         </p>
       ),
     },
     {
-      question: "What is the property system?",
+      question: "Can I import data from other tools?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Every item in Second Brain is powered by a typed property system.
-          Properties like text, number, date, select, relation, formula, and
-          media allow you to structure your data intelligently. You can link
-          items across modules to see all connections in one place.
+          Yes! Second Brain supports importing data from popular tools like Notion, Trello,
+          Asana, and Todoist. We also provide CSV import/export capabilities and API access
+          for custom integrations. Our team can help with complex migrations.
         </p>
       ),
     },
     {
-      question: "Can I visualize my data in different ways?",
+      question: "Is there a free plan?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Yes! Each module supports multiple views, including Table, Board
-          (Kanban), Gallery, List, Calendar, and Timeline. Views can be
-          filtered, sorted, and grouped, letting you organize and explore your
-          data exactly how you want.
+          Yes! Our Free plan includes core modules (Tasks, Notes, Projects), one personal
+          workspace, basic database properties, and essential views. It's perfect for individuals
+          getting started with no time limits or feature restrictions.
         </p>
       ),
     },
     {
-      question: "Does Second Brain support collaboration?",
+      question: "What are the differences between plans?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Absolutely. Team workspaces allow multiple users with role-based
-          permissions, commenting, shared dashboards, and collaborative project
-          management, all while maintaining data integrity and security.
+          Free plan: Core features for individuals. Pro plan ($15/user/month): All 15+ modules,
+          advanced features, cloud sync, and priority support. Team plan ($10/user/month, min 3):
+          Everything in Pro plus collaboration features, advanced permissions, and dedicated support.
         </p>
       ),
     },
     {
-      question: "Can I use templates and pre-built systems?",
+      question: "Does Second Brain support team collaboration?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Yes. Each module comes with intelligent pre-defined templates (e.g.,
-          Meeting Notes, Daily Habits) and you can also create your own.
-          Additionally, the platform supports PARA methodology for organizing
-          Projects, Areas, Resources, and Archives.
+          Absolutely. Team workspaces allow multiple users with role-based permissions,
+          real-time collaboration, shared dashboards, and audit logs. You can invite unlimited
+          team members and manage permissions at the workspace, module, and item levels.
         </p>
       ),
     },
     {
-      question: "Is my data secure?",
+      question: "How secure is my data?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Absolutely. Second Brain uses industry-standard encryption and
-          security practices, ensuring your data stays safe and private while
-          remaining easily accessible within your workspace.
+          Security is our top priority. We use end-to-end encryption, regular security audits,
+          SOC 2 compliance, and industry-standard practices. Your data is encrypted at rest
+          and in transit, with regular backups and disaster recovery procedures in place.
+        </p>
+      ),
+    },
+    {
+      question: "Can I access my data offline?",
+      answer: (
+        <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
+          Yes! Second Brain works offline with local data storage. Your changes sync automatically
+          when you reconnect. Pro and Team plans include cloud backup and sync across devices.
         </p>
       ),
     },

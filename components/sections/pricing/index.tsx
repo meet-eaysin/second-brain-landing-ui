@@ -12,83 +12,79 @@ interface PricingProps {
 }
 
 export default function Pricing({
-  title = "Future Plans for Second Brain",
-  description = "Experience the full power of modular productivity. Comprehensive plans designed for every workflow.",
+  title = "Simple, Transparent Pricing",
+  description = "Choose the plan that fits your productivity needs. Start free and upgrade as you grow.",
   plans = [
     {
       name: "Free",
-      description: "For individuals starting their productivity journey",
+      description: "Perfect for individuals getting started",
       price: 0,
-      priceNote: "Always free. Core experience included.",
+      priceNote: "Free forever. No credit card required.",
       cta: {
         variant: "glow",
-        label: "Get Started",
+        label: "Get Started Free",
         href: "/signup",
       },
       features: [
-        "Tasks, Notes, Projects & Habits modules",
+        "Core modules: Tasks, Notes, Projects",
         "1 Personal Workspace",
-        "Basic custom properties",
+        "Basic database properties",
         "Table, Board & Calendar views",
         "Local data storage",
+        "Community support",
       ],
       variant: "default",
     },
     {
       name: "Pro",
-      description: "For power users needing advanced capabilities",
-      price: 12,
-      priceNote: "Monthly per user. All premium features.",
+      description: "For power users and professionals",
+      price: 15,
+      priceNote: "Per user per month. Billed annually.",
       cta: {
         variant: "default",
-        label: "Coming Soon",
-        href: "#",
-        disabled: true,
+        label: "Start Pro Trial",
+        href: "/pricing#pro",
       },
       features: [
         "Everything in Free",
-        "All modules: Goals, Journal, Finance, People, Resources",
+        "All 15+ modules unlocked",
         "Advanced custom properties & formulas",
-        "Timeline, Gallery & List views",
-        "AI-assisted content generation",
-        "Advanced dashboards & analytics",
+        "All view types: Timeline, Gallery, List",
         "Cloud sync & backup",
+        "Advanced search & filtering",
+        "Custom dashboards & analytics",
         "Priority email support",
+        "API access",
       ],
       variant: "glow-brand",
       badge: (
         <Badge variant="outline" className="ml-2 border-brand/30 text-brand">
-          Coming Soon
+          Most Popular
         </Badge>
       ),
     },
     {
       name: "Team",
-      description: "For teams collaborating in shared workspaces",
-      price: 8,
-      priceNote: "Monthly per user (min 5 seats). Team collaboration.",
+      description: "For teams and organizations",
+      price: 10,
+      priceNote: "Per user per month (min 3 seats).",
       cta: {
         variant: "default",
-        label: "Coming Soon",
-        href: "#",
-        disabled: true,
+        label: "Contact Sales",
+        href: "/contact",
       },
       features: [
         "Everything in Pro",
         "Shared team workspaces",
-        "Advanced user permissions & roles",
+        "Advanced permissions & roles",
         "Real-time collaboration",
-        "Team AI knowledge base",
-        "Advanced automation & workflows",
-        "Audit logs & activity history",
-        "Dedicated account manager",
+        "Team analytics & reporting",
+        "Audit logs & compliance",
+        "Custom integrations",
+        "Dedicated success manager",
+        "SLA support",
       ],
       variant: "glow",
-      badge: (
-        <Badge variant="outline" className="ml-2 border-brand/30 text-brand">
-          Coming Later
-        </Badge>
-      ),
     },
   ],
   className = "",

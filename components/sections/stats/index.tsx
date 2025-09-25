@@ -15,26 +15,27 @@ interface StatsProps {
 export default function Stats({
   items = [
     {
-      label: "Data Types",
-      value: 14,
+      label: "Active Users",
+      value: "10,000",
       suffix: "+",
-      description: "Rich property types including Relation & Formula",
+      description: "Trusted by professionals worldwide",
+    },
+    {
+      label: "Modules",
+      value: 15,
+      suffix: "+",
+      description: "Specialized tools for every workflow",
+    },
+    {
+      label: "Property Types",
+      value: 8,
+      suffix: "+",
+      description: "Text, Number, Date, Select, Relation, Formula, Media & more",
     },
     {
       label: "View Types",
       value: 6,
-      description: "Table, Board, Calendar, Timeline, List, and Gallery",
-    },
-    {
-      label: "Core Modules",
-      value: 10,
-      description: "Pre-built for productivity & knowledge management",
-    },
-    {
-      label: "Custom Database",
-      value: "--",
-      description:
-        "Create flexible databases with multiple property types, relations, rollups, and custom views",
+      description: "Table, Board, Calendar, Timeline, List, Gallery",
     },
   ],
   className,

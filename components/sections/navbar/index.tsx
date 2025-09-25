@@ -43,10 +43,9 @@ export default function Navbar({
   homeUrl = siteConfig.url,
   mobileLinks = [
     { text: "Features", href: "/features" },
-    { text: "Modules", href: "/modules" },
-    { text: "Templates", href: "/templates" },
-    { text: "Docs", href: "/docs" },
-    { text: "Pricing", href: "/pricing" },
+    { text: "Pricing", href: "/#pricing" },
+    { text: "About", href: "/about" },
+    { text: "Contact", href: "/contact" },
   ],
   actions = [
     {
