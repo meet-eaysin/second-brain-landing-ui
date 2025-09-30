@@ -22,7 +22,7 @@ interface CTAProps {
 }
 
 export default function CTA({
-  title = "Ready to Explore the Portfolio?",
+  title = "Ready to Explore this?",
   buttons = [
     {
       href: siteConfig.links.demo,

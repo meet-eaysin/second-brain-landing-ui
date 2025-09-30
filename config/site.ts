@@ -7,9 +7,9 @@ export const siteConfig = {
   description:
     "Second Brain is your all-in-one productivity system. Organize tasks, projects, goals, notes, and more in one powerful, flexible workspace.",
   links: {
-    twitter: "https://twitter.com/secondbrain",
-    github: "https://github.com/secondbrain/secondbrain",
-    email: "mailto:hello@secondbrain.app",
+    twitter: "https://x.com/meet_eaysin",
+    github: "https://github.com/meet-eaysin",
+    email: "mailto:meet.eaysin@gmail.com",
     linkedin: "",
     docs: "",
     demo: "https://second-brain-rust-one.vercel.app/",

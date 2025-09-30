@@ -40,6 +40,11 @@ export default function Stats({
   ],
   className,
 }: StatsProps) {
+  // Debug log to validate current stats data
+  console.log("Stats component rendering with items:", items);
+
+  // Commented out stats section until real data is available
+  /*
   return (
     <Section className={className}>
       <div className="container mx-auto max-w-[960px]">
@@ -77,4 +82,8 @@ export default function Stats({
       </div>
     </Section>
   );
+  */
+
+  // Return null to render nothing
+  return null;
 }
