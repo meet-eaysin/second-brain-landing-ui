@@ -31,7 +31,7 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Your Digital Second Brain",
+  title = "Your Second Brain",
   description = "A comprehensive productivity platform with modular workspaces, advanced databases, rich note-taking, and powerful project management. Connect your tasks, knowledge, and goals in one seamless system.",
   mockup = (
     <Screenshot
@@ -70,7 +70,7 @@ export default function Hero({
   return (
     <Section
       className={cn(
-        "fade-bottom overflow-hidden pb-0 sm:pb-0 md:pb-0",
+        "fade-bottom overflow-hidden pb-0 sm:pb-0 md:pb-0 h-screen",
         className
       )}
     >
@@ -104,27 +104,6 @@ export default function Hero({
             </div>
           )}
         </div>
-
-        {/* Mockup section */}
-        {mockup !== false && (
-          <div className="relative w-full pt-12">
-            <MockupFrame
-              className="animate-appear opacity-0 delay-700"
-              size="small"
-            >
-              <Mockup
-                type="responsive"
-                className="bg-background/90 w-full rounded-xl border-0"
-              >
-                {mockup}
-              </Mockup>
-            </MockupFrame>
-            <Glow
-              variant="top"
-              className="animate-appear-zoom opacity-0 delay-1000"
-            />
-          </div>
-        )}
       </div>
     </Section>
   );
