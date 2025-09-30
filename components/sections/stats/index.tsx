@@ -15,12 +15,6 @@ interface StatsProps {
 export default function Stats({
   items = [
     {
-      label: "Active Users",
-      value: "10,000",
-      suffix: "+",
-      description: "Trusted by professionals worldwide",
-    },
-    {
       label: "Modules",
       value: 15,
       suffix: "+",
@@ -30,12 +24,18 @@ export default function Stats({
       label: "Property Types",
       value: 8,
       suffix: "+",
-      description: "Text, Number, Date, Select, Relation, Formula, Media & more",
+      description:
+        "Text, Number, Date, Select, Relation, Formula, Media & more",
     },
     {
       label: "View Types",
       value: 6,
       description: "Table, Board, Calendar, Timeline, List, Gallery",
+    },
+    {
+      label: "Status",
+      value: "Portfolio",
+      description: "Development showcase project",
     },
   ],
   className,

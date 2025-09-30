@@ -23,7 +23,7 @@ export default function Pricing({
       cta: {
         variant: "glow",
         label: "Get Started Free",
-        href: "/signup",
+        href: "https://second-brain-rust-one.vercel.app/",
       },
       features: [
         "Core modules: Tasks, Notes, Projects",
@@ -43,7 +43,7 @@ export default function Pricing({
       cta: {
         variant: "default",
         label: "Start Pro Trial",
-        href: "/pricing#pro",
+        href: "https://second-brain-rust-one.vercel.app/",
       },
       features: [
         "Everything in Free",
@@ -70,8 +70,8 @@ export default function Pricing({
       priceNote: "Per user per month (min 3 seats).",
       cta: {
         variant: "default",
-        label: "Contact Sales",
-        href: "/contact",
+        label: "Get Started",
+        href: "https://second-brain-rust-one.vercel.app/",
       },
       features: [
         "Everything in Pro",

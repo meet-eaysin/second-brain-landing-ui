@@ -11,13 +11,23 @@ export default function Home() {
   return (
     <main className="bg-background text-foreground min-h-screen w-full overflow-hidden">
       <Navbar />
-      <Hero />
-      <Items />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="items">
+        <Items />
+      </section>
       <Stats />
-      <Pricing />
-      <FAQ />
+      {/* <section id="pricing">
+        <Pricing />
+      </section> */}
+      <section id="faq">
+        <FAQ />
+      </section>
       <CTA />
-      <Footer />
+      <section id="footer">
+        <Footer />
+      </section>
     </main>
   );
 }

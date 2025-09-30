@@ -32,7 +32,7 @@ interface HeroProps {
 
 export default function Hero({
   title = "Your Second Brain",
-  description = "A comprehensive productivity platform with modular workspaces, advanced databases, rich note-taking, and powerful project management. Connect your tasks, knowledge, and goals in one seamless system.",
+  description = "A comprehensive productivity platform with modular workspaces, advanced databases, rich note-taking, and powerful project management. Connect your tasks, knowledge, and goals in one seamless system. Currently in development - portfolio showcase.",
   mockup = (
     <Screenshot
       srcLight="/dashboard-light.png"
@@ -55,13 +55,12 @@ export default function Hero({
   buttons = [
     {
       href: siteConfig.getStartedUrl,
-      text: "Start Free Trial",
+      text: "Sign In",
       variant: "default",
-      iconRight: <ArrowRightIcon className="ml-2 h-4 w-4" />,
     },
     {
-      href: "/features",
-      text: "View Features",
+      href: siteConfig.getStartedUrl,
+      text: "Get Started",
       variant: "glow",
     },
   ],

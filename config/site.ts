@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Second Brain",
   url: "https://secondbrain.app",
-  getStartedUrl: "https://secondbrain.app/signup",
+  getStartedUrl: "https://second-brain-rust-one.vercel.app/",
   ogImage: "https://secondbrain.app/og.jpg",
   docsUrl: "",
   description:
@@ -12,7 +12,7 @@ export const siteConfig = {
     email: "mailto:hello@secondbrain.app",
     linkedin: "",
     docs: "",
-    demo: "",
+    demo: "https://second-brain-rust-one.vercel.app/",
   },
   pricing: {
     pro: "https://secondbrain.app/pricing#pro",

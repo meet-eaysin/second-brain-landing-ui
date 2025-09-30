@@ -39,10 +39,10 @@ export default function FooterSection({
     {
       title: "Product",
       links: [
-        { text: "Features", href: "/features" },
-        { text: "Pricing", href: "/#pricing" },
-        { text: "About", href: "/about" },
-        { text: "Contact", href: "/contact" },
+        { text: "Features", href: "#items" },
+        { text: "About", href: "#hero" },
+        { text: "FAQ", href: "#faq" },
+        { text: "Contact", href: "#footer" },
       ],
     },
     {
@@ -64,7 +64,7 @@ export default function FooterSection({
       ],
     },
   ],
-  copyright = `© ${new Date().getFullYear()} Second Brain. A showcase project by Eaysin Arafat.`,
+  copyright = `© ${new Date().getFullYear()} Second Brain. Portfolio showcase by Mikolaj Dobrucki.`,
   policies = [
     { text: "Privacy Policy", href: "/privacy" },
     { text: "Terms of Service", href: "/terms" },

@@ -24,13 +24,15 @@ export default function FAQ({
   title = "Frequently Asked Questions",
   items = [
     {
-      question: "What makes Second Brain different from other productivity tools?",
+      question:
+        "What makes Second Brain different from other productivity tools?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Second Brain offers a truly modular architecture with 15+ specialized modules
-          that work together seamlessly. Unlike rigid tools, you can customize every aspect
-          of your workspace while maintaining powerful relationships between your data.
-          It's designed to adapt to your workflow, not force you to adapt to it.
+          Second Brain offers a truly modular architecture with 15+ specialized
+          modules that work together seamlessly. Unlike rigid tools, you can
+          customize every aspect of your workspace while maintaining powerful
+          relationships between your data. It's designed to adapt to your
+          workflow, not force you to adapt to it.
         </p>
       ),
     },
@@ -38,10 +40,11 @@ export default function FAQ({
       question: "How many modules are available?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Second Brain includes 15+ specialized modules including Tasks, Projects, Notes,
-          Databases, Calendar, People, Finance, Journal, Goals, Templates, Search, and more.
-          Each module is pre-configured for its purpose but fully customizable with your own
-          properties, views, and workflows.
+          Second Brain includes 15+ specialized modules including Tasks,
+          Projects, Notes, Databases, Calendar, People, Finance, Journal, Goals,
+          Templates, Search, and more. Each module is pre-configured for its
+          purpose but fully customizable with your own properties, views, and
+          workflows.
         </p>
       ),
     },
@@ -49,29 +52,32 @@ export default function FAQ({
       question: "Can I import data from other tools?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Yes! Second Brain supports importing data from popular tools like Notion, Trello,
-          Asana, and Todoist. We also provide CSV import/export capabilities and API access
-          for custom integrations. Our team can help with complex migrations.
+          Yes! Second Brain supports importing data from popular tools like
+          Notion, Trello, Asana, and Todoist. We also provide CSV import/export
+          capabilities and API access for custom integrations. Our team can help
+          with complex migrations.
         </p>
       ),
     },
     {
-      question: "Is there a free plan?",
+      question: "Is this a portfolio project?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Yes! Our Free plan includes core modules (Tasks, Notes, Projects), one personal
-          workspace, basic database properties, and essential views. It's perfect for individuals
-          getting started with no time limits or feature restrictions.
+          Yes! This is a personal portfolio showcase demonstrating the Second
+          Brain productivity platform. The application is currently in
+          development and serves as an example of modern web development with
+          Next.js, TypeScript, and advanced UI components.
         </p>
       ),
     },
     {
-      question: "What are the differences between plans?",
+      question: "What technologies are used?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Free plan: Core features for individuals. Pro plan ($15/user/month): All 15+ modules,
-          advanced features, cloud sync, and priority support. Team plan ($10/user/month, min 3):
-          Everything in Pro plus collaboration features, advanced permissions, and dedicated support.
+          The landing page is built with Next.js 15, Tailwind CSS 4, shadcn/ui
+          components, and TypeScript. The full application uses a modular
+          architecture with React, Node.js, and modern web technologies for a
+          comprehensive productivity system.
         </p>
       ),
     },
@@ -79,9 +85,10 @@ export default function FAQ({
       question: "Does Second Brain support team collaboration?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Absolutely. Team workspaces allow multiple users with role-based permissions,
-          real-time collaboration, shared dashboards, and audit logs. You can invite unlimited
-          team members and manage permissions at the workspace, module, and item levels.
+          Absolutely. Team workspaces allow multiple users with role-based
+          permissions, real-time collaboration, shared dashboards, and audit
+          logs. You can invite unlimited team members and manage permissions at
+          the workspace, module, and item levels.
         </p>
       ),
     },
@@ -89,9 +96,10 @@ export default function FAQ({
       question: "How secure is my data?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Security is our top priority. We use end-to-end encryption, regular security audits,
-          SOC 2 compliance, and industry-standard practices. Your data is encrypted at rest
-          and in transit, with regular backups and disaster recovery procedures in place.
+          Security is our top priority. We use end-to-end encryption, regular
+          security audits, SOC 2 compliance, and industry-standard practices.
+          Your data is encrypted at rest and in transit, with regular backups
+          and disaster recovery procedures in place.
         </p>
       ),
     },
@@ -99,8 +107,9 @@ export default function FAQ({
       question: "Can I access my data offline?",
       answer: (
         <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-          Yes! Second Brain works offline with local data storage. Your changes sync automatically
-          when you reconnect. Pro and Team plans include cloud backup and sync across devices.
+          Yes! Second Brain works offline with local data storage. Your changes
+          sync automatically when you reconnect. Pro and Team plans include
+          cloud backup and sync across devices.
         </p>
       ),
     },
