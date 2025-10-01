@@ -49,7 +49,7 @@ export default function Hero({
       className="animate-pulse border-brand/30 bg-brand/10 text-brand"
     >
       <Brain className="mr-1 h-3 w-3" />
-      15+ Modules • Type-Safe • Production Ready
+      AI Insights — Coming Soon
     </Badge>
   ),
   buttons = [
